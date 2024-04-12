@@ -87,7 +87,7 @@
 
                   <!-- Dataset link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://home.cs.colorado.edu/~DrG/VisualPrivacy/LateralFlowTests" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-database"></i>
@@ -120,9 +120,11 @@
   <div class="container is-max-desktop">
      <div class="hero-body">
        <!-- Replaced video with img tag -->
-       <img src="static/images/Dataset Fig 1 -v2.png" alt="Teaser Image" class="teaser-image">
+       <div class="columns is-centered">
+        <img src="static/images/Dataset Fig 1 -v2.png" alt="Teaser Image" class="teaser-image" style="height: 600px;width: auto;">
+       </div>
        <h2 class="subtitle has-text-centered">
-        LFT Grounding Dataset comprises of 325 COVID LFT images, each with hierarchical segmentations that localize LFT tests and their nested test result windows.. 
+        LFT-Grounding Dataset comprises of 325 COVID LFT images, each with hierarchical segmentations that localize LFT tests and their nested test result windows.. 
        </h2>
      </div>
   </div>
@@ -165,11 +167,10 @@
          <li>325 Images</li>
          <li>300 Images showing a Positive Covid Result</li>
          <li>25 Images showing a Negative Covid Result</li>
-         <li>650 Total Segmentations </li>
+         <li>650 Segmentations </li>
        </ul>
        <h2 class="title is-8">JSON Annotation Formats:</h2>
-       <p>We provide JSON annotations for both segmentation masks and bounding box for LFT Test Object and Test Result Window.
-        Each JSON annotation example for <strong>segmentation mask</strong> uses the following format:</p>
+       <p>We provide JSON files with annotations for both segmentation masks and bounding boxes showing the location of each lateral flow test and its result window. Each <strong>segmentation mask</strong> is described using the following format </p>
        <!-- Here you can add a code block or a preformatted text block to show the JSON format -->
        <pre><code>{
         "Covid-Test-Positive-62P.jpg": {
@@ -276,7 +277,7 @@
           "URL": "https://bivpriv.colorado.edu/covid_lft/Covid-Test-Positive-62P.jpg"
       },  
  }</code></pre>
-      <p>Each JSON annotation example for <strong>bounding box</strong> uses the following format:</p>
+      <p>Each <strong>bounding box</strong> is described using the following format:</p>
       <pre><code>{
         "Covid-Test-Positive-62P.jpg": {
           "Four Corners": [
